@@ -8,6 +8,7 @@ port = 30303
 max_peers = 100
 
 [rpc]
+port = 8545
 apis = ["web3","eth","net"]
 interface = "all"
 cors=["all"]
