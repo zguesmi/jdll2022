@@ -1,0 +1,25 @@
+[parity]
+chain = "spec.json"
+base_path = "chain-data"
+
+[network]
+reserved_peers="bootnodes.txt"
+#nat="extip:@PUBLIC_IP_ADDRESS@"
+port = 30303
+max_peers = 100
+
+[rpc]
+apis = ["web3","eth","net"]
+interface = "all"
+
+[account]
+password = ["validator.pwd"]
+unlock = ["0x15011aa4908e0caae181f31fcf9db263000cfe87"]
+
+[mining]
+usd_per_tx = "0"
+force_sealing = true
+engine_signer = "0x15011aa4908e0caae181f31fcf9db263000cfe87"
+gas_floor_target = "6700000"
+reseal_on_txs = "none"
+min_gas_price = 0
